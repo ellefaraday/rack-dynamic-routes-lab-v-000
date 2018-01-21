@@ -22,6 +22,7 @@ class Application
   end
 
   def find_item_by_name(name)
+    found = nil
     @@items.each do |item|
       if item.name == name
         found = item
